@@ -1,4 +1,4 @@
-package com.johnymoreira.maspois.facade;
+package com.johnymoreira.moveandshotws.facade;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -10,9 +10,9 @@ import java.util.Properties;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 
-import com.johnymoreira.maspois.dao.PoiDAO;
-import com.johnymoreira.maspois.pojo.Poi;
-import com.johnymoreira.maspois.util.Constants;
+import com.johnymoreira.moveandshotws.dao.PoiDAO;
+import com.johnymoreira.moveandshotws.pojo.Poi;
+import com.johnymoreira.moveandshotws.util.Constants;
 
 public class MaSPOIsFacade implements ServletContextListener{
 	

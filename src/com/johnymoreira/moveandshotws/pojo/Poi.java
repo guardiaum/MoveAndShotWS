@@ -1,4 +1,4 @@
-package com.johnymoreira.maspois.pojo;
+package com.johnymoreira.moveandshotws.pojo;
 
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;

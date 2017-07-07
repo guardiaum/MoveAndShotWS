@@ -1,4 +1,4 @@
-package com.johnymoreira.maspois.util;
+package com.johnymoreira.moveandshotws.util;
 
 public class Constants {
 	

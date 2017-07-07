@@ -1,12 +1,12 @@
-package com.johnymoreira.maspois.dao;
+package com.johnymoreira.moveandshotws.dao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.Properties;
 
-import com.johnymoreira.maspois.facade.MaSPOIsFacade;
-import com.johnymoreira.maspois.util.Constants;
+import com.johnymoreira.moveandshotws.facade.MaSPOIsFacade;
+import com.johnymoreira.moveandshotws.util.Constants;
 
 public class ConnectionUtil {
 	

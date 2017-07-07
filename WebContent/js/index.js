@@ -199,8 +199,8 @@ $(function() {
 */
 function loadMap() {
 	var myOptions = {
-		zoom : 10,
-		mapTypeId: 'satellite'
+		zoom : 20,
+		mapTypeId: 'terrain'
 	};
 
 	map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);

@@ -5,11 +5,11 @@
     <welcome-file>index.html</welcome-file>
   </welcome-file-list>
   <servlet>
-      <servlet-name>MasPOIs REST Service</servlet-name>
+      <servlet-name>MoveAndShotWS REST Service</servlet-name>
       <servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
       <init-param>
 	      <param-name>com.sun.jersey.config.property.packages</param-name>
-	      <param-value>com.johnymoreira.maspois.services</param-value>
+	      <param-value>com.johnymoreira.moveandshotws.services</param-value>
       </init-param>
       <init-param>
 	      <param-name>com.sun.jersey.api.json.POJOMappingFeature</param-name>
@@ -18,10 +18,10 @@
       <load-on-startup>1</load-on-startup>
   </servlet>
   <listener>
-    <listener-class>com.johnymoreira.maspois.facade.MaSPOIsFacade</listener-class>
+    <listener-class>com.johnymoreira.moveandshotws.facade.MaSPOIsFacade</listener-class>
   </listener>
   <servlet-mapping>
-    <servlet-name>MasPOIs REST Service</servlet-name>
+    <servlet-name>MoveAndShotWS REST Service</servlet-name>
     <url-pattern>/services/*</url-pattern>
   </servlet-mapping>
 </web-app>

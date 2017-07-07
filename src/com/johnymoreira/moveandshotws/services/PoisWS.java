@@ -1,4 +1,4 @@
-package com.johnymoreira.maspois.services;
+package com.johnymoreira.moveandshotws.services;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -25,9 +25,9 @@ import javax.ws.rs.core.Response;
 
 import org.postgis.Polygon;
 
-import com.johnymoreira.maspois.facade.MaSPOIsFacade;
-import com.johnymoreira.maspois.pojo.LatLng;
-import com.johnymoreira.maspois.pojo.Poi;
+import com.johnymoreira.moveandshotws.facade.MaSPOIsFacade;
+import com.johnymoreira.moveandshotws.pojo.LatLng;
+import com.johnymoreira.moveandshotws.pojo.Poi;
 import com.sun.jersey.core.header.FormDataContentDisposition;
 import com.sun.jersey.multipart.FormDataParam;
 
@@ -45,7 +45,7 @@ public class PoisWS {
 	public int sendPois(@FormParam("name") String name, @FormParam("type") String type,
 			@FormParam("latitude") Double latitude, @FormParam("longitude") Double longitude
 			) {
-		//System.out.println("POI: "+name);
+		System.out.println("POI: "+name);
 		Poi poi = new Poi(name, type, latitude, longitude);
 		int id = MaSPOIsFacade.storePoi(poi);
 		return id;

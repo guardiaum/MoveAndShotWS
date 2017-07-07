@@ -1,4 +1,4 @@
-package com.johnymoreira.maspois.pojo;
+package com.johnymoreira.moveandshotws.pojo;
 
 public class LatLng {
 	private Double latitude;

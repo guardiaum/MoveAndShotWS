@@ -1,4 +1,4 @@
-package com.johnymoreira.maspois.dao;
+package com.johnymoreira.moveandshotws.dao;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -11,7 +11,7 @@ import org.postgis.Geometry;
 import org.postgis.MultiPolygon;
 import org.postgis.Polygon;
 
-import com.johnymoreira.maspois.pojo.Poi;
+import com.johnymoreira.moveandshotws.pojo.Poi;
 
 public class PoiDAO {
 
