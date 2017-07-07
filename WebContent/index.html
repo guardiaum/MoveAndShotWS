@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Move and Shot - POIs</title>
+		<link rel="shortcut icon" href="img/icon_ms.png"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css"
+			href="css/ui-lightness/jquery-ui-1.10.4.custom.min.css">
+		<link rel="stylesheet" type="text/css"
+			href="css/uploadify.css">
+		<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.10.4.custom.min.js"></script>
+		<script type="text/javascript" src="js/jquery.uploadify.min.js"></script>
+		<script type="text/javascript" src="js/maspois.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<script async defer
+  				src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBf9DpHqqNkyxnFpvsBipbXGw7lO1SiZ04&callback=loadMap">
+		</script>
+	</head>
+	<body onload="initialize();">
+		<div id="cabecalho">
+			<img alt="logo" src="img/logo-web-move-and-shot2.png" />
+		</div>
+		
+		<div id="ferramentas">
+			<button id="btAddPOI">Adicionar POI</button>
+		</div>
+		
+		<div id="map_canvas"></div>
+		
+		<div id="dialog-form" title="Criar novo POI">
+			<p class="validateTips">Todos os campos são obrigatórios.</p>
+			<form>
+				<fieldset>
+					<label for="nome">Nome</label>
+					<input type="text" name="name"
+						id="nome" value=""
+						class="text ui-widget-content ui-corner-all">
+					<label for="tipo">Tipo</label>
+					<input type="text" name="tipo"
+						id="tipo" value=""
+						class="text ui-widget-content ui-corner-all">
+					<!-- Allow form submission with keyboard without duplicating the dialog button -->
+					<input type="submit" tabindex="-1"
+						style="position: absolute; top: -1000px">
+				</fieldset>
+			</form>
+		</div>
+		
+		<div id="dialog-confirm" title="Remover o ponto de interesse?">
+			<p><span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 20px 0;"></span>O ponto de interesse será removido permanentemente. Você tem certeza disso?</p>
+		</div>
+		
+		<div id="dialog-sucess-message" title="Confirmação de Remoção">
+			<p>
+			<span class="ui-icon ui-icon-circle-check" style="float:left; margin:0 7px 50px 0;"></span>
+			Operação realizada com sucesso.
+			</p>
+		</div>
+		
+		<div id="dialog-message-shot-area" title="Área de captura">
+			<p>
+			<span class="ui-icon ui-icon-circle-check" style="float:left; margin:0 7px 50px 0;"></span>
+			Você está prestes a adicionar uma área de captura de imagens para o POI selecionado.
+			</p>
+			<p>
+			Clique em <b>OK</b> e comece a desenhar o polígono correspondente através de cliques no mapa.
+			Para terminar clique no ponto inicial, fechando o polígono.
+			</p>
+		</div>
+		
+		<div id="dialog-upload-image" title="Upload Imagem">
+			<input type="file" id="file_upload" name="file_upload" value="Selecionar Arquivo"/>
+			<img id="avatar" alt="" src="" width="100" hidden="hidden"/>
+			<!-- <input type="button" value="Carregar" onclick="$('#file_upload').uploadifyUpload();"/> -->
+		</div>
+		
+	</body>
+</html>
