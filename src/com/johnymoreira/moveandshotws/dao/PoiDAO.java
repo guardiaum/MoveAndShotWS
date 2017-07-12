@@ -11,10 +11,22 @@ import org.postgis.Geometry;
 import org.postgis.MultiPolygon;
 import org.postgis.Polygon;
 
+import com.johnymoreira.moveandshotws.pojo.LatLng;
 import com.johnymoreira.moveandshotws.pojo.Poi;
 
+/**
+ * Data Access Object
+ * 
+ * @author Johny Moreira
+ *
+ */
 public class PoiDAO {
 
+	/**
+	 * Armazena ponto de interesse
+	 * @param poi {@link Poi}
+	 * @return	id do ponto caso cadastro tenha sido concluído. 0 caso negativo.
+	 */
 	public static int storePoi(Poi poi) {
 		int id = 0;
 		try {
@@ -30,11 +42,8 @@ public class PoiDAO {
 					String sql = "INSERT INTO "
 							+ "poi (poi_name, poi_type, latitude, longitude) "
 							+ "VALUES ('"+poi.getName()+ "', '"+ poi.getType()
-							+ "',"+poi.getLatitude()+", "+poi.getLongitude()+ ") returning id;";
-					/*
-					 * ,'"+ poi.getShotAreaPolygon().toString().replace("),(", ",") + ")
-					 * */
-					//System.out.println(sql);
+							+ "',"+poi.getPoiCoordinate().getLatitude()+", "
+							+poi.getPoiCoordinate().getLongitude()+ ") returning id;";
 
 					ResultSet rs = s.executeQuery(sql);
 					rs.next();
@@ -54,6 +63,10 @@ public class PoiDAO {
 		return id;
 	}
 
+	/**
+	 * Remove ponto de interesse
+	 * @param id String identificador do ponto de interesse
+	 */
 	public static void removePoi(String id) {
 		try {
 			Class.forName("org.postgresql.Driver");
@@ -75,9 +88,13 @@ public class PoiDAO {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-
 	}
 
+	/**
+	 * Obtem a lista de pontos de interesse cadastrados
+	 * 
+	 * @return List<Poi> a lista de pontos
+	 */
 	public static List<Poi> getPois() {
 		List<Poi> pois = new ArrayList<Poi>();
 		try {
@@ -103,22 +120,17 @@ public class PoiDAO {
 						String theGeomSt = rs.getString("poi_shot_area_polygon");
 						if (theGeomSt != null) {
 							try {
-								Geometry theGeom = null;
+								Polygon theGeom = null;
 								if (theGeomSt.toUpperCase().contains(
-										"MULTIPOLYGON")) {
-									theGeom = new MultiPolygon(theGeomSt);
-								} else if (theGeomSt.toUpperCase().contains(
 										"POLYGON")) {
 									theGeom = new Polygon(theGeomSt);
 								}
-								p.setShotImagesArea(theGeom);
+								p.setShotAreaPolygon(theGeom);
 							} catch (Exception e) {
 								e.printStackTrace();
 							}
 						}
-						//System.out.println(p.getShotImagesArea());
-						p.setLatitude(rs.getDouble("latitude"));
-						p.setLongitude(rs.getDouble("longitude"));
+						p.setPoiCoordinate(new LatLng(rs.getDouble("latitude"), rs.getDouble("longitude")));
 						p.setImageAddress(rs.getString("image"));
 						pois.add(p);
 					}
@@ -136,6 +148,12 @@ public class PoiDAO {
 		return pois;
 	}
 
+	/**
+	 * Obtem um ponto de interesse
+	 * 
+	 * @param id int identificador do ponto
+	 * @return {@link Poi}
+	 */
 	public static Poi getPoi(int id) {
 		try {
 			Class.forName("org.postgresql.Driver");
@@ -158,8 +176,7 @@ public class PoiDAO {
 					p.setType(rs.getString("poi_type"));
 					if(rs.getString("poi_shot_area_polygon")!=null)
 						p.setShotAreaPolygon(new Polygon(rs.getString("poi_shot_area_polygon")));
-					p.setLatitude(rs.getDouble("latitude"));
-					p.setLongitude(rs.getDouble("longitude"));
+					p.setPoiCoordinate(new LatLng(rs.getDouble("latitude"), rs.getDouble("longitude")));
 					p.setImageAddress(rs.getString("image"));
 					return p;
 				} finally {
@@ -176,6 +193,11 @@ public class PoiDAO {
 		return null;
 	}
 	
+	/**
+	 * Atualiza informações do ponto de interesse
+	 * 
+	 * @param poi {@link Poi} ponto de interesse com dados a serem atualizados
+	 */
 	public static void update(Poi poi) {
 		try {
 			Class.forName("org.postgresql.Driver");
@@ -189,8 +211,8 @@ public class PoiDAO {
 		            			+ " WHERE id = VALOR";
 		            	sql = sql.replaceFirst("VALOR", "'"+poi.getName()+"'");
 		            	sql = sql.replaceFirst("VALOR", "'"+poi.getType()+"'");
-		            	sql = sql.replaceFirst("VALOR", String.valueOf(poi.getLatitude()));
-		            	sql = sql.replaceFirst("VALOR", String.valueOf(poi.getLongitude()));
+		            	sql = sql.replaceFirst("VALOR", String.valueOf(poi.getPoiCoordinate().getLatitude()));
+		            	sql = sql.replaceFirst("VALOR", String.valueOf(poi.getPoiCoordinate().getLongitude()));
 		            	if(poi.getShotAreaPolygon()!=null)
 		            		sql = sql.replaceFirst("VALOR","'"+poi.getShotAreaPolygon().toString().replace("),(", ",")+"'");
 		            	else

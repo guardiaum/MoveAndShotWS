@@ -2,49 +2,57 @@ package com.johnymoreira.moveandshotws.pojo;
 
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
-
-import org.postgis.Geometry;
 import org.postgis.Polygon;
 
+/**
+ * POJO para definição de POI (Point of Interest)
+ * 
+ * @author Johny Moreira
+ *
+ */
 @XmlRootElement
 public class Poi {
 	private int id;
 	private String name;
 	private String type;
 	private Polygon shotAreaPolygon;
-	private Geometry shotImagesArea;
-	private Double latitude;
-	private Double longitude;
+	private LatLng poiCoordinate;
 	private String imageAddress;
 
-	public Poi() {
-	}
-	
-	public Poi(String name, String type, Double latitude, Double longitude) {
+	public Poi() {}
+
+	/**
+	 * Construtor sobrecarregado de ponto de interesse.
+	 * 
+	 * @param name String
+	 * @param type String
+	 * @param poiCoordinate {@link LatLng}
+	 */
+	public Poi(String name, String type, LatLng poiCoordinate) {
 		this.name = name;
 		this.type = type;
-		this.latitude = latitude;
-		this.longitude = longitude;
+		this.poiCoordinate = poiCoordinate;
 	}
 	
-	public Poi(int id, String name, String type, Polygon polygon) {
-		super();
-		this.id = id;
-		this.name = name;
-		this.type = type;
-		this.shotAreaPolygon = polygon;
-	}
-	
+	/**
+	 * Construtor sobrecarregado de ponto de interesse e área para captura de fotografias
+	 * 
+	 * @param id int
+	 * @param name String
+	 * @param type String
+	 * @param shotAreaPolygon {@link Polygon}
+	 * @param poiCoordinate {@link LatLng}
+	 * @param imageAddress String
+	 */
 	public Poi(int id, String name, String type, Polygon shotAreaPolygon,
-			Geometry shotImagesArea, Double latitude, Double longitude) {
+			LatLng poiCoordinate, String imageAddress) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.type = type;
 		this.shotAreaPolygon = shotAreaPolygon;
-		this.shotImagesArea = shotImagesArea;
-		this.latitude = latitude;
-		this.longitude = longitude;
+		this.poiCoordinate = poiCoordinate;
+		this.imageAddress = imageAddress;
 	}
 
 	public String getName() {
@@ -62,6 +70,7 @@ public class Poi {
 	public void setType(String type) {
 		this.type = type;
 	}
+	
 	@XmlTransient
 	public Polygon getShotAreaPolygon() {
 		return shotAreaPolygon;
@@ -86,44 +95,20 @@ public class Poi {
 		this.id = id;
 	}
 
-	public Double getLatitude() {
-		return latitude;
-	}
-
-	public void setLatitude(Double latitude) {
-		this.latitude = latitude;
-	}
-
-	public Double getLongitude() {
-		return longitude;
-	}
-
-	public void setLongitude(Double longitude) {
-		this.longitude = longitude;
-	}
-	
-	public String getShotImagesAreaSt(){
-		if (shotImagesArea!= null) {
-			return shotImagesArea.toString();
-		}
-		return null;
-	}
-	
-	@XmlTransient
-	public Geometry getShotImagesArea() {
-		return shotImagesArea;
-	}
-
-	public void setShotImagesArea(Geometry shotImagesArea) {
-		this.shotImagesArea = shotImagesArea;
-	}
-
 	public String getImageAddress() {
 		return imageAddress;
 	}
 
 	public void setImageAddress(String imageAddress) {
 		this.imageAddress = imageAddress;
+	}
+
+	public LatLng getPoiCoordinate() {
+		return poiCoordinate;
+	}
+
+	public void setPoiCoordinate(LatLng poiCoordinate) {
+		this.poiCoordinate = poiCoordinate;
 	}
 	
 }

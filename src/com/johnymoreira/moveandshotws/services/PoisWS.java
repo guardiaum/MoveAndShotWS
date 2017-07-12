@@ -46,7 +46,7 @@ public class PoisWS {
 			@FormParam("latitude") Double latitude, @FormParam("longitude") Double longitude
 			) {
 		//System.out.println("POI: "+name);
-		Poi poi = new Poi(name, type, latitude, longitude);
+		Poi poi = new Poi(name, type, new LatLng(latitude, longitude));
 		int id = MoveAndShotFacade.storePoi(poi);
 		return id;
 	}

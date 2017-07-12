@@ -15,7 +15,7 @@
 		<script type="text/javascript" src="js/moveandshotws.js"></script>
 		<script type="text/javascript" src="js/index.js"></script>
 		<script async defer
-  				src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBf9DpHqqNkyxnFpvsBipbXGw7lO1SiZ04&callback=loadMap">
+  				src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBf9DpHqqNkyxnFpvsBipbXGw7lO1SiZ04&libraries=places&callback=loadMap">
 		</script>
 	</head>
 	<body>
@@ -26,7 +26,9 @@
 		<div id="ferramentas">
 			<button id="btAddPOI">Adicionar POI</button>
 		</div>
-		
+		<div id="search">
+			<input id="search-bar" class="controls" type="text" placeholder="Busca">
+		</div>
 		<div id="map_canvas"></div>
 		
 		<div id="dialog-form" title="Criar novo POI">

@@ -1,13 +1,21 @@
 package com.johnymoreira.moveandshotws.pojo;
 
+/**
+ * POJO de definição de coordenadas
+ * 
+ * @author Johny Moreira
+ *
+ */
 public class LatLng {
 	private Double latitude;
 	private Double longitude;
 	
-	public LatLng() {
-		super();
-	}
-	
+	/**
+	 * Construtor sobrecarregado
+	 * 
+	 * @param latitude Double
+	 * @param longitude Double
+	 */
 	public LatLng(Double latitude, Double longitude) {
 		super();
 		this.latitude = latitude;
@@ -18,15 +26,8 @@ public class LatLng {
 		return latitude;
 	}
 	
-	public void setLatitude(Double latitude) {
-		this.latitude = latitude;
-	}
-	
 	public Double getLongitude() {
 		return longitude;
 	}
 	
-	public void setLongitude(Double longitude) {
-		this.longitude = longitude;
-	}
 }
