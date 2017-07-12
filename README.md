@@ -1,4 +1,4 @@
-# MoveAndShotWS ![alt text](https://github.com/guardiaum/MoveAndShotWS/WebContent/img/icon_ms.png "icon")
+#![MoveAndShotWS logo](https://github.com/guardiaum/MoveAndShotWS/blob/master/WebContent/img/logo-web-move-and-shot2.png?raw=true "MoveAndShotWS logo")
 
 MoveAndShot Web Service
 
@@ -10,4 +10,5 @@ melhores pontos para captura de fotografias"_, trabalho monográfico do curso Ba
 
 ##Overview
 Página home com pontos, áreas e imagens cadastrados.
-![alt text](https://github.com/guardiaum/MoveAndShotWS/WebContent/img/overview.png "Home page")
+
+![Home page](https://github.com/guardiaum/MoveAndShotWS/blob/master/WebContent/img/overview.png?raw=true "Home page")
