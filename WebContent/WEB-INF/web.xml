@@ -18,7 +18,7 @@
       <load-on-startup>1</load-on-startup>
   </servlet>
   <listener>
-    <listener-class>com.johnymoreira.moveandshotws.facade.MaSPOIsFacade</listener-class>
+    <listener-class>com.johnymoreira.moveandshotws.facade.MoveAndShotFacade</listener-class>
   </listener>
   <servlet-mapping>
     <servlet-name>MoveAndShotWS REST Service</servlet-name>

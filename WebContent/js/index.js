@@ -142,6 +142,7 @@ $(function() {
 				success : function(data, status) {
 					$("#avatar").attr("src",data.imageAddress);
 					$("#avatar").show();
+					$("#img-confirmation").text("Image Sent!");
 					for (var index = 0; index < markers.length; index++) {
 						if(markers[index].get("id")==poiAdicionarFoto){
 							var m = markers[index];
@@ -158,13 +159,15 @@ $(function() {
 							m.setMap(map);
 							markers[index] = m;
 						}
-					}
+					}					
+					
+					//dialogCarregaFoto.dialog( "close" );
 				},
 				error : function OnExecuteError(request, status, error) {
+					$("#img-confirmation").text("Erro!");
 					alert("Erro recuperando imagem avatar" + error);
 				}
 			});
-			//dialogCarregaFoto.dialog("close");
 		},
 		'onUploadError' : function(file, errorCode, errorMsg, errorString) {
             alert('The file ' + file.name + ' could not be uploaded: ' + errorString);
@@ -200,7 +203,7 @@ $(function() {
 function loadMap() {
 	var myOptions = {
 		zoom : 20,
-		mapTypeId: 'terrain'
+		mapTypeId: 'satellite'
 	};
 
 	map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);

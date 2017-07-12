@@ -14,9 +14,9 @@ import com.johnymoreira.moveandshotws.dao.PoiDAO;
 import com.johnymoreira.moveandshotws.pojo.Poi;
 import com.johnymoreira.moveandshotws.util.Constants;
 
-public class MaSPOIsFacade implements ServletContextListener{
+public class MoveAndShotFacade implements ServletContextListener{
 	
-	static ClassLoader classLoader = MaSPOIsFacade.class.getClassLoader();
+	static ClassLoader classLoader = MoveAndShotFacade.class.getClassLoader();
 	private static String contextPath;
 	private static Properties properties = null;
 	

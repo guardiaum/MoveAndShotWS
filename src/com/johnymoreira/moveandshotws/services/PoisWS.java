@@ -25,7 +25,7 @@ import javax.ws.rs.core.Response;
 
 import org.postgis.Polygon;
 
-import com.johnymoreira.moveandshotws.facade.MaSPOIsFacade;
+import com.johnymoreira.moveandshotws.facade.MoveAndShotFacade;
 import com.johnymoreira.moveandshotws.pojo.LatLng;
 import com.johnymoreira.moveandshotws.pojo.Poi;
 import com.sun.jersey.core.header.FormDataContentDisposition;
@@ -47,7 +47,7 @@ public class PoisWS {
 			) {
 		System.out.println("POI: "+name);
 		Poi poi = new Poi(name, type, latitude, longitude);
-		int id = MaSPOIsFacade.storePoi(poi);
+		int id = MoveAndShotFacade.storePoi(poi);
 		return id;
 	}
 
@@ -55,7 +55,7 @@ public class PoisWS {
 	@Path("/getPois")
 	@Produces(MediaType.APPLICATION_JSON)
 	public List<Poi> getPois() {
-		List<Poi> pois = MaSPOIsFacade.getPois();
+		List<Poi> pois = MoveAndShotFacade.getPois();
 		//System.out.println("pois.length:" + pois.size());
 		return pois;
 	}
@@ -64,7 +64,7 @@ public class PoisWS {
 	@Path("/delete_poi")
 	@Consumes(MediaType.APPLICATION_JSON)
 	public void removePoi(@FormParam("poi_id") String id) {
-		MaSPOIsFacade.removePoi(id);
+		MoveAndShotFacade.removePoi(id);
 	}
 
 	@GET
@@ -72,14 +72,14 @@ public class PoisWS {
 	@Consumes(MediaType.APPLICATION_JSON)
 	@Produces(MediaType.APPLICATION_JSON)
 	public Poi getPoiById(@QueryParam("poi_id") int id) {
-		return MaSPOIsFacade.getPoi(id);
+		return MoveAndShotFacade.getPoi(id);
 	}
 	
 	@POST
 	@Path("/addShotArea")
 	@Consumes(MediaType.APPLICATION_JSON)
 	public void addShotArea(@QueryParam("poi_id")int id, @QueryParam("area")String area){
-		Poi poi = MaSPOIsFacade.getPoi(id);
+		Poi poi = MoveAndShotFacade.getPoi(id);
 		
 		area = "POLYGON " + (area.replace(", ", " ")).replace("),(", ",");
 		Polygon p = null;
@@ -91,7 +91,7 @@ public class PoisWS {
 		poi.setShotAreaPolygon(p);
 		//System.out.println("Polygon: " + p.toString().replace("),(", ","));
 		
-		MaSPOIsFacade.update(poi);
+		MoveAndShotFacade.update(poi);
 	}
 	
 	@POST
@@ -100,11 +100,11 @@ public class PoisWS {
 	public Response sendImage(@FormDataParam("file")InputStream uploadedInputStream,
 			@FormDataParam("file")FormDataContentDisposition fileDetails,
 			 @FormDataParam("poi_id") int poiId){
-		//System.out.println("POI: "+ poiId);
-		//System.out.println("File Details: "+fileDetails.toString());
-		//System.out.println("Uploaded Input Stream: "+uploadedInputStream.toString());
+		System.out.println("POI: "+ poiId);
+		System.out.println("File Details: "+fileDetails.toString());
+		System.out.println("Uploaded Input Stream: "+uploadedInputStream.toString());
 		try{
-			Poi poi = MaSPOIsFacade.getPoi(poiId);
+			Poi poi = MoveAndShotFacade.getPoi(poiId);
 			
 			String contextPath = wsc.getRealPath("");		
 			
@@ -117,7 +117,7 @@ public class PoisWS {
 			String uploadedFileLocation = contextPath+System.getProperty("file.separator")+REPOSITORY_PATH + System.getProperty("file.separator")+ poiId + System.getProperty("file.separator") + fileDetails.getFileName();
 			String relativePath = REPOSITORY_PATH + System.getProperty("file.separator")+ poiId + System.getProperty("file.separator") + fileDetails.getFileName();
 			poi.setImageAddress(relativePath);
-			MaSPOIsFacade.update(poi);
+			MoveAndShotFacade.update(poi);
 	
 			saveToFile(uploadedInputStream, uploadedFileLocation);
 		}catch(Exception ex){
@@ -131,7 +131,7 @@ public class PoisWS {
 	@Consumes(MediaType.APPLICATION_JSON)
 	@Produces(MediaType.APPLICATION_JSON)
 	public ArrayList<LatLng> getArea(@QueryParam("poi_id")int id){
-		Poi poi = MaSPOIsFacade.getPoi(id);
+		Poi poi = MoveAndShotFacade.getPoi(id);
 		if(poi.getShotAreaPolygonSt()!=null)
 			return getPontos(poi.getShotAreaPolygonSt());
 		return null;
