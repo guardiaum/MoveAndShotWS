@@ -14,3 +14,16 @@ melhores pontos para captura de fotografias"_, trabalho monográfico do curso Ba
 Página home com pontos, áreas e imagens cadastrados.
 
 ![Home page](https://github.com/guardiaum/MoveAndShotWS/blob/master/WebContent/img/overview.png?raw=true "Home page")
+
+## Dependências
+
+* Apache Tomcat/7.0.79
+* Postgres 9.6.3
+* Postgis 2.3.2
+
+### Navegadores compatíveis
+* Firefox 54.0
+* Google Chrome 59.0
+
+OBS: Requer ativação do adobe flash player
+
