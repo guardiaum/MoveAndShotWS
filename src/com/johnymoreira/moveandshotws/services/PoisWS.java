@@ -45,7 +45,7 @@ public class PoisWS {
 	public int sendPois(@FormParam("name") String name, @FormParam("type") String type,
 			@FormParam("latitude") Double latitude, @FormParam("longitude") Double longitude
 			) {
-		System.out.println("POI: "+name);
+		//System.out.println("POI: "+name);
 		Poi poi = new Poi(name, type, latitude, longitude);
 		int id = MoveAndShotFacade.storePoi(poi);
 		return id;
@@ -100,9 +100,9 @@ public class PoisWS {
 	public Response sendImage(@FormDataParam("file")InputStream uploadedInputStream,
 			@FormDataParam("file")FormDataContentDisposition fileDetails,
 			 @FormDataParam("poi_id") int poiId){
-		System.out.println("POI: "+ poiId);
+		/*System.out.println("POI: "+ poiId);
 		System.out.println("File Details: "+fileDetails.toString());
-		System.out.println("Uploaded Input Stream: "+uploadedInputStream.toString());
+		System.out.println("Uploaded Input Stream: "+uploadedInputStream.toString());*/
 		try{
 			Poi poi = MoveAndShotFacade.getPoi(poiId);
 			
