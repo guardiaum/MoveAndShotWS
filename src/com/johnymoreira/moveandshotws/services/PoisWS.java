@@ -1,8 +1,6 @@
 package com.johnymoreira.moveandshotws.services;
 
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -28,17 +26,22 @@ import org.postgis.Polygon;
 import com.johnymoreira.moveandshotws.facade.MoveAndShotFacade;
 import com.johnymoreira.moveandshotws.pojo.LatLng;
 import com.johnymoreira.moveandshotws.pojo.Poi;
+import com.johnymoreira.moveandshotws.pojo.PoiImage;
+import com.johnymoreira.moveandshotws.util.Constants;
 import com.sun.jersey.core.header.FormDataContentDisposition;
 import com.sun.jersey.multipart.FormDataParam;
 
+import redis.clients.jedis.Jedis;
+import redis.rmq.Producer;
+
 @Path("/pois")
 public class PoisWS {
-	
+
 	private static final String REPOSITORY_PATH = "fotos";
-	
+
 	@Context
 	private ServletContext wsc;
-	
+
 	@POST
 	@Path("/send")
 	@Consumes(MediaType.APPLICATION_JSON)
@@ -74,13 +77,13 @@ public class PoisWS {
 	public Poi getPoiById(@QueryParam("poi_id") int id) {
 		return MoveAndShotFacade.getPoi(id);
 	}
-	
+
 	@POST
 	@Path("/addShotArea")
 	@Consumes(MediaType.APPLICATION_JSON)
 	public void addShotArea(@QueryParam("poi_id")int id, @QueryParam("area")String area){
 		Poi poi = MoveAndShotFacade.getPoi(id);
-		
+
 		area = "POLYGON " + (area.replace(", ", " ")).replace("),(", ",");
 		Polygon p = null;
 		try {
@@ -90,10 +93,10 @@ public class PoisWS {
 		}
 		poi.setShotAreaPolygon(p);
 		//System.out.println("Polygon: " + p.toString().replace("),(", ","));
-		
+
 		MoveAndShotFacade.update(poi);
 	}
-	
+
 	@POST
 	@Path("/sendImage")
 	@Consumes(MediaType.MULTIPART_FORM_DATA)
@@ -105,27 +108,27 @@ public class PoisWS {
 		System.out.println("Uploaded Input Stream: "+uploadedInputStream.toString());*/
 		try{
 			Poi poi = MoveAndShotFacade.getPoi(poiId);
-			
-			String contextPath = wsc.getRealPath("");		
-			
+
+			String contextPath = wsc.getRealPath("");
+
 			File f = new File(contextPath+System.getProperty("file.separator")+REPOSITORY_PATH + System.getProperty("file.separator")+ poiId);
-			
+
 			if (!f.exists()) {
 				f.mkdirs();
 			}
-			
+
 			String uploadedFileLocation = contextPath+System.getProperty("file.separator")+REPOSITORY_PATH + System.getProperty("file.separator")+ poiId + System.getProperty("file.separator") + fileDetails.getFileName();
 			String relativePath = REPOSITORY_PATH + System.getProperty("file.separator")+ poiId + System.getProperty("file.separator") + fileDetails.getFileName();
 			poi.setImageAddress(relativePath);
 			MoveAndShotFacade.update(poi);
-	
+
 			saveToFile(uploadedInputStream, uploadedFileLocation);
 		}catch(Exception ex){
 			ex.printStackTrace();
 		}
 		return Response.ok().build();
 	}
-	
+
 	@GET
 	@Path("/getArea")
 	@Consumes(MediaType.APPLICATION_JSON)
@@ -136,7 +139,6 @@ public class PoisWS {
 			return getPontos(poi.getShotAreaPolygonSt());
 		return null;
 	}
-	
 	
 	private ArrayList<LatLng> getPontos(String polygon) {
 		polygon = polygon.substring(9, polygon.length() - 2);
@@ -169,7 +171,7 @@ public class PoisWS {
 			OutputStream out = null;
 			int read = 0;
 			byte[] bytes = new byte[1024];
-			
+
 			out = new FileOutputStream(new File(uploadedFileLocation));
 			while ((read = inputStream.read(bytes)) != -1){
 				out.write(bytes, 0, read);
@@ -180,7 +182,7 @@ public class PoisWS {
 			e.printStackTrace();
 		}
 	}
-	
+
 	public ServletContext getWsc() {
 		return wsc;
 	}
@@ -188,4 +190,43 @@ public class PoisWS {
 	public void setWsc(ServletContext wsc) {
 		this.wsc = wsc;
 	}
+
+	// Controllers for AI
+
+	@POST
+	@Path("/sendToPrediction")
+	@Consumes(MediaType.MULTIPART_FORM_DATA)
+	public Response sendToPrediction(@FormDataParam("file")InputStream uploadedInputStream,
+			@FormDataParam("file")FormDataContentDisposition fileDetails,
+			 @FormDataParam("poi_id") int poiId){
+		/*System.out.println("POI: "+ poiId);
+		System.out.println("File Details: "+fileDetails.toString());
+		System.out.println("Uploaded Input Stream: "+uploadedInputStream.toString());*/
+		try{
+
+			String contextPath = wsc.getRealPath("");
+
+			File f = new File(contextPath+System.getProperty("file.separator")+REPOSITORY_PATH + System.getProperty("file.separator")+ poiId);
+
+			if (!f.exists()) {
+				f.mkdirs();
+			}
+
+			String uploadedFileLocation = contextPath+System.getProperty("file.separator")+REPOSITORY_PATH + System.getProperty("file.separator")+ poiId + System.getProperty("file.separator") + fileDetails.getFileName();
+			String relativePath = REPOSITORY_PATH + System.getProperty("file.separator")+ poiId + System.getProperty("file.separator") + fileDetails.getFileName();
+			saveToFile(uploadedInputStream, uploadedFileLocation);
+			System.out.println("poi_id: " + poiId);
+			PoiImage poiImage = new PoiImage(poiId,"new",relativePath);
+			int poiImageId = MoveAndShotFacade.storePoiImage(poiImage);
+			Producer p = new Producer(new Jedis("localhost"), Constants.REDIS_PENDENT_POI_IMAGES_TOPIC);
+			p.publish(String.valueOf(poiImageId));
+
+		}catch(Exception ex){
+			ex.printStackTrace();
+		}
+		return Response.ok().build();
+	}
+
+
+	
 }

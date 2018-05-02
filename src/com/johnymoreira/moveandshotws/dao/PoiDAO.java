@@ -170,7 +170,7 @@ public class PoiDAO {
 									+ "FROM poi WHERE id="+ id);
 
 					rs.next();
-					Poi p = new Poi();
+					Poi p = new Poi();	
 					p.setId(rs.getInt("id"));
 					p.setName(rs.getString("poi_name"));
 					p.setType(rs.getString("poi_type"));

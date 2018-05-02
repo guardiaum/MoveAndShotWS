@@ -11,7 +11,9 @@ import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 
 import com.johnymoreira.moveandshotws.dao.PoiDAO;
+import com.johnymoreira.moveandshotws.dao.PoiImageDAO;
 import com.johnymoreira.moveandshotws.pojo.Poi;
+import com.johnymoreira.moveandshotws.pojo.PoiImage;
 import com.johnymoreira.moveandshotws.util.Constants;
 
 /**
@@ -113,5 +115,50 @@ public class MoveAndShotFacade implements ServletContextListener{
 	 */
 	public static void update(Poi poi){
 		PoiDAO.update(poi);
+	}
+	
+	/**
+	 * Armazena ponto de interesse
+	 * @param poiImage {@link PoiImage}
+	 * @return	id do ponto caso cadastro tenha sido concluído. 0 caso negativo.
+	 */
+	public static int storePoiImage(PoiImage poiImage) {
+		return PoiImageDAO.storePoiImage(poiImage);
+	}
+	
+	/**
+	 * Remove ponto de interesse
+	 * @param id String identificador do ponto de interesse
+	 */
+	public static void removePoiImage(String id) {
+		PoiImageDAO.removePoiImage(id);
+	}
+
+	/**
+	 * Obtem a lista de pontos de interesse cadastrados
+	 * 
+	 * @return List<PoiImage> a lista de pontos
+	 */
+	public static List<PoiImage> getPoiImages() {
+		return PoiImageDAO.getPoiImages();
+	}
+
+	/**
+	 * Obtem um ponto de interesse
+	 * 
+	 * @param id int identificador do ponto
+	 * @return {@link PoiImage}
+	 */
+	public static PoiImage getPoiImage(int id) {
+		return PoiImageDAO.getPoiImage(id);
+	}
+	
+	/**
+	 * Atualiza informações do ponto de interesse
+	 * 
+	 * @param poiImage {@link PoiImage} ponto de interesse com dados a serem atualizados
+	 */
+	public static void updatePoiImage(PoiImage poiImage){
+		PoiImageDAO.updatePoiImage(poiImage);
 	}
 }

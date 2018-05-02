@@ -6,6 +6,7 @@ public class Constants {
 	public static final String DATABASE_URL = "database.url";
 	public static final String DATABASE_USER = "database.user";
 	public static final String DATABASE_PASSWORD = "database.password";
+	public static final String REDIS_PENDENT_POI_IMAGES_TOPIC = "pendent";
 	
 	public static final String PHOTO_PATH_REPOSITORY = "photos";
 	public static final String ALGORITHMS_CONF_PATH = "conf";
