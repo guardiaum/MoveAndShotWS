@@ -23,10 +23,12 @@ import javax.ws.rs.core.Response;
 
 import org.postgis.Polygon;
 
+import com.johnymoreira.moveandshotws.dao.PoiImageDAO;
 import com.johnymoreira.moveandshotws.facade.MoveAndShotFacade;
 import com.johnymoreira.moveandshotws.pojo.LatLng;
 import com.johnymoreira.moveandshotws.pojo.Poi;
 import com.johnymoreira.moveandshotws.pojo.PoiImage;
+import com.johnymoreira.moveandshotws.util.CaffeUtil;
 import com.johnymoreira.moveandshotws.util.Constants;
 import com.sun.jersey.core.header.FormDataContentDisposition;
 import com.sun.jersey.multipart.FormDataParam;
@@ -196,7 +198,8 @@ public class PoisWS {
 	@POST
 	@Path("/sendToPrediction")
 	@Consumes(MediaType.MULTIPART_FORM_DATA)
-	public Response sendToPrediction(@FormDataParam("file")InputStream uploadedInputStream,
+	@Produces(MediaType.APPLICATION_JSON)
+	public String sendToPrediction(@FormDataParam("file")InputStream uploadedInputStream,
 			@FormDataParam("file")FormDataContentDisposition fileDetails,
 			 @FormDataParam("poi_id") int poiId){
 		/*System.out.println("POI: "+ poiId);
@@ -218,13 +221,14 @@ public class PoisWS {
 			System.out.println("poi_id: " + poiId);
 			PoiImage poiImage = new PoiImage(poiId,"new",relativePath);
 			int poiImageId = MoveAndShotFacade.storePoiImage(poiImage);
-			Producer p = new Producer(new Jedis("localhost"), Constants.REDIS_PENDENT_POI_IMAGES_TOPIC);
-			p.publish(String.valueOf(poiImageId));
+			poiImage.setId(poiImageId);
+			String image_path = contextPath+System.getProperty("file.separator")+poiImage.getImagePath();
+			return CaffeUtil.predict(poiImage,image_path);
 
 		}catch(Exception ex){
 			ex.printStackTrace();
 		}
-		return Response.ok().build();
+		return "failed";
 	}
 
 

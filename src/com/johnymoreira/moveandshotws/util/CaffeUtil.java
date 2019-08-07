@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package com.johnymoreira.moveandshotws.util;
 
@@ -19,44 +19,53 @@ import com.johnymoreira.moveandshotws.pojo.PredictionResult;
 
 /**
  * @author Thiago Leonel
- * 
- * Class for shot calls through the bash using python to run the pycaffe scripts.
+ *
+ *         Class for shot calls through the bash using python to run the pycaffe
+ *         scripts.
  *
  */
+
 public class CaffeUtil {
-	
-	public static void predict(PoiImage poiImage, String image_path) {
-		 String path = createTmpTxt(poiImage);
-		ProcessBuilder pb = new ProcessBuilder("python", "/home/thiago/TCC/bin/HybridIdentifier.py", image_path).redirectError(new File("/home/thiago/tcc-output2.txt")).redirectOutput(new File(path));
-	     try {
-	    	 int retVal = pb.start().waitFor();
-	    	 if(retVal == 0) {	
-	    		poiImage.setStatus("done");
-	    		PoiImageDAO.updatePoiImage(poiImage);
-	    		Prediction prediction = new Prediction();
-	    		prediction.setPoiImageId(poiImage.getId());
-	    		prediction.setTimestamp(new Timestamp(System.currentTimeMillis()));
-	    		saveResults(path, prediction);
-	    	 }else {
-		    		poiImage.setStatus("failed");
-		    	PoiImageDAO.updatePoiImage(poiImage); 
-	    	 }
-	    	 
-	     }catch(Exception e)
-	     {
-	    	 e.printStackTrace(System.out);
-	     }
+
+	String PYTHON_SCRIPT_PATH = "/home/thiago/TCC/bin/HybridIdentifier.py" //Insert here the path for the CNN script
+	String OUTPUT_LOG = "/home/thiago/tcc-output2.txt" //Insert here the path for the log file
+	String TMP_FOLDER = "/home/thiago/TCC/tmp/" // Insert here a path for a tmp folder where results will be written
+
+	public static String predict(PoiImage poiImage, String image_path) {
+		String path = createTmpTxt(poiImage);
+		ProcessBuilder pb = new ProcessBuilder("python", PYTHON_SCRIPT_PATH, image_path)
+				.redirectError(new File(OUTPUT_LOG)).redirectOutput(new File(path));
+		try {
+			int retVal = pb.start().waitFor();
+			if (retVal == 0) {
+				poiImage.setStatus("done");
+				PoiImageDAO.updatePoiImage(poiImage);
+				Prediction prediction = new Prediction();
+				prediction.setPoiImageId(poiImage.getId());
+				prediction.setTimestamp(new Timestamp(System.currentTimeMillis()));
+				return saveResults(path, prediction);
+			} else {
+				poiImage.setStatus("failed");
+				PoiImageDAO.updatePoiImage(poiImage);
+				return "failed";
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace(System.out);
+
+		}
+		return "failed";
 	}
-	
+
 	private static String createTmpTxt(PoiImage poiImage) {
-		String basePath = "/home/thiago/TCC/tmp/";
-		String folder = poiImage.getId()+System.currentTimeMillis()+"";
-		String path = basePath+folder+"/tmp.txt";
-		File directory = new File(basePath+folder);
-		if(!directory.exists()) {
+		String basePath = TMP_FOLDER;
+		String folder = poiImage.getId() + System.currentTimeMillis() + "";
+		String path = basePath + folder + "/tmp.txt";
+		File directory = new File(basePath + folder);
+		if (!directory.exists()) {
 			directory.mkdirs();
 		}
-		
+
 		File file = new File(path);
 		try {
 			file.createNewFile();
@@ -64,31 +73,38 @@ public class CaffeUtil {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+
 		return path;
 	}
-	
-	private static void saveResults(String tmpFilePath,  Prediction prediction) {
+
+	private static String saveResults(String tmpFilePath, Prediction prediction) throws IOException {
+		BufferedReader reader = null;
 		try {
-			BufferedReader reader = new BufferedReader(new FileReader(tmpFilePath));
+			reader = new BufferedReader(new FileReader(tmpFilePath));
 			String results = reader.readLine();
 			String executionTime = reader.readLine();
 			prediction.setExecution_time(Double.parseDouble(executionTime));
 			int id = PredictionDAO.storePrediction(prediction);
-			for(String result : results.split(",")) {
+
+			for (String result : results.split(",")) {
 				PredictionResult predictionResult = new PredictionResult();
 				predictionResult.setPrediction_id(id);
 				predictionResult.setResult(result);
 				predictionResult.setStatus("rejected");
 				PredictionResultDAO.storePredictionResult(predictionResult);
 			}
+			return results;
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		}finally {
+			reader.close();
 		}
+
+		return "failed";
 	}
 
 }
