@@ -1,0 +1,1205 @@
+n01440764 tench, Tinca tinca
+n01443537 peixinho, Carassius auratus
+n01484850 grande tubarão branco, tubarão branco, devoradora de homens, tubarão antropófago, Carcharodon carcharias
+n01491361 tubarão de tigre, cuvieri Galeocerdo
+n01494475 tubarão-martelo
+n01496331 ray elétrica, crampfish, numbfish, torpedo
+n01498041 stingray
+n01514668 galo
+n01514859 galinha
+n01518878 avestruz, camelus Struthio
+n01530575 brambling, montifringilla Fringilla
+n01531178 Pintassilgo, Carduelis Carduelis
+n01532829 passarinho de casa, linnet, Carpodacus mexicanus
+n01534433 junco, snowbird
+n01537544 indigo bunting, índigo Finch, pássaro índigo, cyanea do Passerina
+n01558993 robin, robin americano, migratorius do Turdus
+n01560419 bulbul
+n01580077 jay
+n01582220 magpie
+n01592084 chickadee
+n01601694 ouzel água, concha
+n01608432 pipa
+n01614925 águia americana, leucocephalus do Haliaeetus
+n01616318 abutre
+n01622779 coruja de grande cinza, coruja de grande cinza, nebulosa do Strix
+n01629819 salamandra Europeia, salamandra Salamandra
+n01630670 salamandra comum, Triturus vulgaris
+n01631663 eft
+n01632458 manchado salamandra, Ambystoma maculatum
+n01632777 axolotl, filhote de cachorro de lama, mexicanum do Ambystoma
+n01641577 rã-touro, Rana catesbeiana
+n01644373 sapo de árvore, árvore-sapo
+n01644900 ascaphus, sapo sino, sapo com nervuras, sapo cauda, ​​trui Ascaphus
+n01664065 cabeçuda, tartaruga cabeçuda, Caretta caretta
+n01665541 tartaruga de couro, Dermochelys coriacea
+n01667114 tartaruga lama
+n01667778 terrapin
+n01669191 caixa de tartaruga, caixa
+n01675722 faixas gecko
+n01677366 iguana comum, iguana, iguana Iguana
+n01682714 camaleão americano, anole, Anolis carolinensis
+n01685808 whiptail, whiptail lizard
+n01687978 agama
+n01688243 Clamidossauro, kingi Chlamydosaurus
+n01689811 lagarto jacaré
+n01692333 Gila monstro, suspectum Heloderma
+n01693334 lagarto verde viridis Lacerta
+n01694178 camaleão Africano chamaeleon Chamaeleo
+n01695060 dragão de Komodo, lagarto, dragão lagarto, lagarto gigante, Varanus komodoensis
+n01697457 crocodilo Africano Crocodilo do Nilo, Crocodylus niloticus
+n01698640 jacaré americano, mississipiensis Alligator
+n01704323 triceratops
+n01728572 trovão cobra, verme cobra, amoenus Carphophis
+n01728920 ringneck cobra, cobra anel tubuladuras, anel de cobra
+n01729322 hognose cobra, sopro adicionador, víbora da areia
+n01729977 cobra verde, cobra grama
+n01734418 rei cobra, kingsnake
+n01735189 liga cobra, cobra grama
+n01737021 água serpente
+n01739381 cobra videira
+n01740131 noite cobra, torquata Hypsiglena
+n01742172 jibóia, constrictor Constrictor
+n01744401 rocha pitão, cobra rocha, sebae Python
+n01748264 cobra indiano, naja Naja
+n01749939 mamba verde
+n01751748 cobra mar
+n01753488 chifres víbora, cerastes, areia víbora, asp chifres, cerastes cornutus
+n01755581 diamondback, cascavel de Diamondbacks, adamanteus Crotalus
+n01756291 Sidewinder, cascavel Chifre, Cascavel-chifruda
+n01768244 trilobite
+n01770081 harvestman, longlegs Papai, opilio Phalangium
+n01770393 escorpião
+n01773157 preto e aranha de jardim ouro, aurantia do Argiope
+n01773549 celeiro aranha, cavaticus Araneus
+n01773797 aranha de jardim, diademata Aranea
+n01774384 viúva negra, aranha Latrodectus
+n01774750 tarântula
+n01775062 lobo aranha, aranha caça
+n01776313 carrapato
+n01784675 centopéia
+n01795545 lira
+n01796340 ptarmigan
+n01797886 ruffed grouse, perdiz, umbellus Bonasa
+n01798484 galinha de pradaria, pradaria galo, galinha de pradaria
+n01806143 pavão
+n01806567 codornizes
+n01807496 perdiz
+n01817953 cinza Africano cinza Africano, erithacus do Psittacus
+n01818515 arara
+n01819313 cacatua crested-enxofre, Kakatoe galerita, galerita Cacatua
+n01820546 lorikeet
+n01824575 coucal
+n01828970 comedor de abelha
+n01829413 hornbill
+n01833805 beija-flor
+n01843065 jacamar
+n01843383 tucano
+n01847000 Drake
+n01855032 Merganso-, serrator mergus
+n01855672 ganso
+n01860187 cisne negro, Cygnus atratus
+n01871265 tusker
+n01872401 equidna, tamanduá espinhoso, tamanduá
+n01873310 ornitorrinco, bico de pato, ornitorrinco, ornitorrinco, anatinus do Ornithorhynchus
+n01877812 wallaby, canguru escova
+n01882714 koala, urso koala, urso canguru, urso nativo, cinereus do Phascolarctos
+n01883070 wombat
+n01910747 medusas
+n01914609 actínia, Anemone
+n01917289 coral cérebro
+n01924916 verme, platelminto
+n01930112 nematóides, vermes nematóides, lombriga
+n01943899 concha
+n01944390 caracol
+n01945685 lesma
+n01950731 lesma do mar, nudibrânquios
+n01955084 chiton, shell coat-of-mail, berço mar, polyplacophore
+n01968897 Nautilus à temperatura ambiente, perolado Nautilus, Nautilus
+n01978287 Dungeness, magíster cancro
+n01978455 caranguejo rocha, irroratus cancro
+n01980166 caranguejo violinista
+n01981276 king crab, caranguejo do Alasca, Alasca caranguejo, Alaska king crab, camtschatica Paralithodes
+n01983481 lagosta americana, lagosta do Norte, lagosta do Maine, americanus Homarus
+n01984695 de lagostas, langouste, lagosta, lagostim, lagosta, lagostim do mar
+n01985128 lagostas, lagostins, crawdad, crawdaddy
+n01986214 caranguejo eremita
+n01990800 isopod
+n02002556 cegonha branca, ciconia ciconia
+n02002724 cegonha preta, Ciconia nigra
+n02006656 colhereiro
+n02007558 flamingo
+n02009229 pouco garça azul, caerulea do Egretta
+n02009912 Egret americano, garça real de grande branco, albus Egretta
+n02011460 ouriço
+n02012849 guindaste
+n02013706 limpkin, Aramus pictus
+n02017213 gallinule Europeia, Porphyrio Porphyrio
+n02018207 Galeirão americano galinha de pântano, galinha lama, galinha de água, americana Fulica
+n02018795 bustard
+n02025239 turnstone corado, interpres do arenário
+n02027492 sandpiper vermelho-suportado, dunlin, alpina Erolia
+n02028035 redshank, totanus do Tringa
+n02033041 dowitcher
+n02037110 oystercatcher, apanhador de ostras
+n02051845 pelicano
+n02056570 pinguim de rei, patagonica do Aptenodytes
+n02058221 albatroz, mollymawk
+n02066245 baleia cinzenta, baleia cinzenta, devilfish, Eschrichtius gibbosus, robustus Eschrichtius
+n02071294 assassino baleia, assassino, orca, grampus, lobo do mar, orca Orcinus
+n02074367 dugongo, dugon Dugong
+n02077923 leão mar
+n02085620 Chihuahua
+n02085782 spaniel japonês
+n02085936 cão maltês, terrier maltês, maltês
+n02086079 pequinês, pequinês, Peke
+n02086240 Shih-Tzu
+n02086646 Blenheim spaniel
+n02086910 papillon
+n02087046 terrier de brinquedo
+n02087394 Rhodesian ridgeback
+n02088094 galgo afegão, afegão
+n02088238 basset, basset hound
+n02088364 beagle
+n02088466 bloodhound, Sleuthhound
+n02088632 bluetick
+n02089078 preto-e-tan coonhound
+n02089867 Walker cão, foxhound Walker
+n02089973 Inglês foxhound
+n02090379 redbone
+n02090622 borzoi, wolfhound russo
+n02090721 wolfhound irlandês
+n02091032 galgo italiano
+n02091134 whippet
+n02091244 Ibizan, Ibiza Podenco
+n02091467 elkhound norueguês, elkhound
+n02091635 otterhound, cão de lontra
+n02091831 Saluki, cão de gazela
+n02092002 deerhound, deerhound
+n02092339 Weimaraner
+n02093256 Staffordshire bullterrier, staffordshire bull terrier
+n02093428 American Staffordshire terrier, Staffordshire terrier, American Pit Bull Terrier, pit bull terrier
+n02093647 terrier Bedlington
+n02093754 terrier Border
+n02093859 Kerry terrier azul
+n02093991 terrier irlandês
+n02094114 terrier Norfolk
+n02094258 terrier Norwich
+n02094433 Yorkshire terrier
+n02095314 terrier raposa fio de pêlo
+n02095570 terrier Lakeland
+n02095889 Sealyham terrier, Sealyham
+n02096051 Airedale, Airedale terrier
+n02096177 monte de pedras, terrier de monte de pedras
+n02096294 terrier australiano
+n02096437 Dandie Dinmont, Dandie Dinmont terrier
+n02096585 Boston touro, terrier Boston
+n02097047 schnauzer miniatura
+n02097130 schnauzer gigante
+n02097209 schnauzer padrão
+n02097298 Scotch, terrier escocês, Scottie
+n02097474 terrier tibetano, cão de crisântemo
+n02097658 terrier de seda, seda Sydney
+n02098105 wheaten macio-revestido
+n02098286 West Highland terrier branco
+n02098413 Lhasa, Lhasa apso
+n02099267 retriever liso revestido
+n02099429 retriever encaracolado-revestido
+n02099601 golden retriever
+n02099712 retriever Labrador
+n02099849 retriever Chesapeake Bay
+n02100236 ponteiro de cabelos curtos alemão
+n02100583 vizsla, ponteiro húngaro
+n02100735 Inglês setter
+n02100877 setter irlandês, setter vermelho
+n02101006 Gordon setter
+n02101388 Brittany spaniel
+n02101556 clumber, clumber spaniel
+n02102040 Inglês springer, springer spaniel Inglês
+n02102177 Welsh springer spaniel
+n02102318 cocker spaniel, Inglês cocker spaniel, cocker
+n02102480 spaniel Sussex
+n02102973 spaniel de água irlandesa
+n02104029 kuvasz
+n02104365 schipperke
+n02105056 groenendael
+n02105162 malinois
+n02105251 briard
+n02105412 kelpie
+n02105505 komondor
+n02105641 Inglês velho Sheepdog, bobtail
+n02105855 Shetland Sheepdog, cão de carneiros de Shetland, Shetland
+n02106030 collie
+n02106166 collie Border
+n02106382 Bouvier des Flandres, Bouviers des Flandres
+n02106550 Rottweiler
+n02106662 pastor alemão, cão de pastor alemão, cão de polícia alemão, alsatian
+n02107142 Doberman, Doberman pinscher
+n02107312 pinscher miniatura
+n02107574 cão suíço maior da montanha
+n02107683 cão de montanha Bernese
+n02107908 Appenzeller
+n02108000 Entlebucher
+n02108089 boxer
+n02108422 mastiff de touro
+n02108551 mastiff tibetano
+n02108915 buldogue francês
+n02109047 Great Dane
+n02109525 São Bernardo, São Bernardo
+n02109961 cão esquimó, rouca
+n02110063 malamute, malemute, malamute do Alasca
+n02110185 Siberian Husky
+n02110341 dalmatian, cão treinador, cão de transporte
+n02110627 affenpinscher, macaco pinscher, cão de macaco
+n02110806 basenji
+n02110958 pug, pug-dog
+n02111129 Leonberg
+n02111277 Terra Nova, cão de Terra Nova
+n02111500 Great Pyrenees
+n02111889 Samoyed, Samoyede
+n02112018 Pomeranian
+n02112137 comida, chow chow
+n02112350 keeshond
+n02112706 Brabancon griffon
+n02113023 Pembroke, corgi Pembroke Welsh
+n02113186 Cardigan, corgi Cardigan Welsh
+n02113624 poodle toy
+n02113712 poodle miniatura
+n02113799 poodle
+n02113978 calvo mexicano
+n02114367 madeira, lobo cinzento, cinzento lobo, lúpus Canis
+n02114548 lobo branco, lobo ártico, Canis lupus tundrarum
+n02114712 lobo vermelho, lobo-guará, Canis rufus, niger Canis
+n02114855 coiote, lobo de pradaria, lobo escova, latrans do Canis
+n02115641 dingo, Warrigal, warragal, dingo Canis
+n02115913 dhole, alpinus Cuon
+n02116738 cão Africano caça, cão hiena, cão de caça do Cabo, Lycaon pictus
+n02117135 hiena, hiena
+n02119022 raposa vermelha, vulpes do Vulpes
+n02119789 kit de raposa, macrotis Vulpes
+n02120079 Arctic fox, raposa branca, lagopus lagopus
+n02120505 raposa cinzenta, raposa cinzenta, cinereoargenteus Urocyon
+n02123045 gato malhado, gato malhado
+n02123159 gato de tigre
+n02123394 gato persa
+n02123597 cat Siamese, Siamese
+n02124075 Gato egípcio
+n02125311 puma, catamount, leão de montanha, pintor, pantera, Felis concolor
+n02127052 lince, catamount
+n02128385 leopardo, pardus do Panthera
+n02128757 leopardo de neve, onça, uncia do Panthera
+n02128925 jaguar, pantera, Panthera onca, Felis onca
+n02129165 leão, rei dos animais, Panthera leo
+n02129604 tigre, Panthera tigris
+n02130308 chita, chetah, Acinonyx jubatus
+n02132136 urso marrom, bruin, Ursus arctos
+n02133161 americano urso preto, urso preto, Ursus americanus, americanus Euarctos
+n02134084 urso polar, urso polar, Ursus maritimus, maritimus Thalarctos
+n02134418 urso de preguiça, ursinus Melursus, ursinus do Ursus
+n02137549 mangusto
+n02138441 meerkat, mierkat
+n02165105 Besouro de tigre
+n02165456 joaninha, ladybeetle, besouro de senhora, joaninha, besouro joaninha
+n02167151 terreno besouro, besouro carabid
+n02168699 besouro longo-horned, longicorn, besouro longicorn
+n02169497 folha besouro, crisomelídeo
+n02172182 escaravelho
+n02174001 besouro rinoceronte
+n02177972 gorgulho
+n02190166 voar
+n02206856 abelha
+n02219486 formiga, emmet, pismire
+n02226429 gafanhoto, funil
+n02229544 cricket
+n02231487 bengala, bengala, inseto de vara
+n02233338 barata, barata
+n02236044 mantis, mantid
+n02256656 cigarra, cicala
+n02259212 cigarrinha
+n02264363 lacewing, mosca lacewing
+n02268443 libélula, agulha de cerzir, agulha darning do diabo, agulha de costura, alimentador de cobra, cobra médico, falcão de mosquito, falcão skeeter
+n02268853 libelinha
+n02276258 almirante
+n02277742 ringlet, borboleta ringlet
+n02279972 monarca, borboleta monarca, borboleta milkweed, plexippus plexippus
+n02280649 borboleta de repolho
+n02281406 borboleta enxofre borboleta enxofre
+n02281787 lycaenid, borboleta lycaenid
+n02317335 estrelas do mar, estrela de mar
+n02319095 ouriço-do-mar
+n02321529 pepino do mar, holothurian
+n02325366 coelho madeira, coelho, coelho de coelho
+n02326432 lebre
+n02328150 Angora, coelho angorá
+n02342885 hamster
+n02346627 porco, ouriço
+n02356798 raposa esquilo, esquilo de Fox oriental, Sciurus niger
+n02361337 marmota
+n02363005 castor
+n02364673 cobaia, cobaya Cavia
+n02389026 sorrel
+n02391049 zebra
+n02395406 porco, grunter, delator, Sus scrofa
+n02396427 javali, javali, Sus scrofa
+n02397096 warthog
+n02398521 hipopótamo, hipopótamo, cavalo de rio, amphibius Hippopotamus
+n02403003 boi
+n02408429 búfalo de água, água de boi, búfalo asiático, Bubalus
+n02410509 bisonte
+n02412080 ram, tup
+n02415577 veado selvagem, carneiros selvagens, cimarron, Rocky Mountain Bighorn, Rocky Mountain ovelhas, canadensis do Ovis
+n02417914 ibex, Capra ibex
+n02422106 hartebeest
+n02422699 impala, Aepyceros melampus
+n02423022 gazela
+n02437312 camelo árabe, dromedário, dromedarius do Camelus
+n02437616 llama
+n02441942 doninha
+n02442845 mink
+n02443114 polecat, fitch, foulmart, doninha, putorius do Mustela
+n02443484 furão de patas negras, a doninha, Mustela nigripes
+n02444819 lontra
+n02445715 skunk, doninha, vagina madeira
+n02447366 texugo
+n02454379 tatu
+n02457408 preguiça de três dedos, ai, tridactylus Bradypus
+n02480495 orangotango, orang, orangotango, Pongo Pongo
+n02480855 gorila, Gorilla gorilla
+n02481823 chimpanzé, Pan troglodytes
+n02483362 gibão, lar do Hylobates
+n02483708 siamang, Hylobates syndactylus, syndactylus Symphalangus
+n02484975 guenon, macaco guenon
+n02486261 patas macaco hussar, patas do Erythrocebus
+n02486410 babuíno
+n02487347 macaco
+n02488291 langur
+n02488702 colobus, macaco colobus
+n02489166 tromba macaco, larvatus Nasalis
+n02490219 sagüi
+n02492035-prego ringtail, capucinus Cebus
+n02492660 bugio, bugio
+n02493509 titi, macaco titi
+n02493793 macaco-aranha, geoffroyi Ateles
+n02494079 macaco de esquilo, Saimiri sciureus
+n02497673 Madagascar gato, lemur anel-atado, Catta do Lemur
+n02500267 indri, Indris, Indri indri, brevicaudatus Indri
+n02504013 elefante indiano, Elephas maximus
+n02504458 elefante Africano Loxodonta africana
+n02509815 pouca panda, panda vermelha, panda, gato, urso gato, fulgens do Ailurus
+n02510455 panda gigante, panda, urso panda, urso coon, melanoleuca do Ailuropoda
+n02514041 Barracouta, snoek
+n02526121 enguia
+n02536864 coho, cohoe, salmão prateado, jack azul, salmões de prata, kisutch Oncorhynchus
+n02606052 rocha beleza, tricolor Holocanthus
+n02607072 peixe Anemone
+n02640242 esturjão
+n02641379 gar, peixe-agulha, garpike, peixe agulha, osseus Lepisosteus
+n02643566 lionfish
+n02655020 soprador, baiacu, blowfish, baiacu
+n02666196 ábaco
+n02667093 abaya
+n02669723 vestido académico, robe acadêmica, robe do juiz
+n02672831 acordeão, acordeão piano, caixa de aperto
+n02676566 violão
+n02687172 porta-aviões, transportador, Fla, aviões ataque
+n02690373 avião
+n02692877 dirigível, dirigible
+n02699494 altar
+n02701002 ambulância
+n02704792 anfíbio, veículo anfíbio
+n02708093 relógio analógico
+n02727426 apiário, casa de abelha
+n02730930 avental
+n02747177 lata-de-lixo, lata de lixo, lixo pode, wastebin, bin cinzas, ashbin, ashbin, o caixote de lixo, tambor de lixo, lixeira
+n02749479 rifle de assalto, injetor do assalto
+n02769748 mochila, mochila, mochila, Mochileiro, mochila, mochila
+n02776631 padaria, bakeshop, padaria
+n02777292 feixe de equilíbrio, feixe
+n02782093 balão
+n02783161 esferográfica, caneta esferográfica, esferográfica, Biro
+n02786058 Band Aid
+n02787622 banjo
+n02788148 corrimão, corrimão, balaustrada, balaústres, corrimão
+n02790996 barra
+n02791124 cadeira de barbeiro
+n02791270 barbearia
+n02793495 celeiro
+n02794156 barômetro
+n02795169 barril, do barril
+n02797295 carrinho de mão, carrinho de jardim, carrinho de gramado, carrinho de mão
+n02799071 baseball
+n02802426 basquete
+n02804414 berço
+n02804610 fagote
+n02807133 touca de banho, touca de natação
+n02808304 toalha de banho
+n02808440 banheira, banheira de banho, banho, banheira
+n02814533 vagão de praia, station wagon, vagão, carro de propriedade, vagão de praia, estação de vagão, vagão
+n02814860 farol, farol, farol, farol
+n02815834 copo
+n02817516 de pele de urso, Busby, barretina
+n02823428 garrafa de cerveja
+n02823750 copo de cerveja
+n02825657 sino cote, berço sino
+n02834397 bib
+n02835271 bicicleta-para-dois, bicicleta tandem, em tandem
+n02837789 biquini, de duas peças
+n02840245 ligante, anel-ligante
+n02841315 binóculos binóculos, óculos de ópera
+n02843684 casa-de-passarinho
+n02859443 estaleiro
+n02860847 bobsled, bobsleigh, bob
+n02865351 gravata de bolinhas, bolo, laço de bola, bola
+n02869837 capot, picar capot
+n02870880 estante
+n02871525 livraria, livraria
+n02877765 tampa-de-garrafa
+n02879718 arco
+n02883205 gravata borboleta, bowtie, bowtie
+n02892201 latão, tablet memorial, placa
+n02892767 sutiã, sutiã, bandeau
+n02894605 quebra-mar, virilha, quebra-mar, em moles, amurada, quebra-mar, molhe
+n02895154 peitoral, égide, egis
+n02906734 vassoura
+n02909870 balde, balde
+n02910353 fivela
+n02916936 colete à prova de balas
+n02917067 trem-bala, bala
+n02927161 açougue, mercado de carne
+n02930766 táxi, corte, táxi, táxi
+n02939185 caldeirão, caldeirão
+n02948072 vela, atarraxamento, luz cera
+n02950826 canhão
+n02951358 canoa
+n02951585 abridor de latas, de estanho abridor
+n02963159 cardigan
+n02965783 espelho de carro
+n02966193 carrossel, carrossel, merry-go-round, carrossel, whirligig
+n02966687 kit, kit de ferramentas de carpinteiro
+n02971356 embalagem
+n02974003 roda de carro
+n02977058 máquina de dinheiro, terminal, máquina de caixa automatizada, máquina de caixa automático, de caixa automatizada, de caixa automático, ATM
+n02978881 cassete
+n02979186 leitor de cassetes
+n02980441 castelo
+n02981792 catamaran
+n02988304 CD player
+n02992211 violoncelo, violoncelo
+n02992529 telefone celular, telefone celular, celular, celular, telefone celular
+n02999410 cadeia
+n03000134 cerca-trançada
+n03000247 correio corrente, correio anel, correio, armadura cadeia, armadura cadeia, armadura anel, anel armadura
+n03000684 corrente de serra, de cadeia
+n03014705 peito
+n03016953 chiffonier, commode
+n03017168 carrilhão, sino, gongo
+n03018349 gabinete china, china armário
+n03026506 meia Natal
+n03028079 igreja, igreja
+n03032252 cinema cinema, sala de cinema, sala de cinema, imagem palácio
+n03041632 cutelo, cortador de carne, triturador
+n03042490 moradia de penhasco
+n03045698 manto
+n03047690 obstrução, geta, patten, sabot
+n03062245 coqueteleira
+n03063599 caneca de café
+n03063689 cafeteira
+n03065424 bobina espiral, helicoidal, espiral, helicoidal
+n03075370 bloqueio combinação
+n03085013 teclado de computador, teclado
+n03089624 confeitaria, confeitaria, loja de doces
+n03095699 navio porta-contentores, contentores, recipiente contentor
+n03100240 conversível
+n03109150 saca-rolhas, o parafuso de frasco
+n03110669 trombeta, chifre, trombeta, trunfo
+n03124043 bota de cowboy
+n03124170 chapéu de cowboy chapéu de dez galões
+n03125729 berço
+n03126707 guindaste
+n03127747 capacete
+n03127925 caixa
+n03131574 berço, berço
+n03133878 Crock Pot
+n03134739 bola croquet
+n03141823 muleta
+n03146219 couraça
+n03160309 dam dique
+n03179701 mesa
+n03180011 computador desktop
+n03187595 telefone com ligação telefone
+n03188531 fralda, fralda, penso
+n03196217 relógio digital
+n03197337 relógio digital de
+n03201208 mesa de jantar placa
+n03207743 dishrag, pano de prato
+n03207941 máquina de lavar louça, de lavar louça, máquina de lavar loiça
+n03208938 freio a disco freio a disco
+n03216828 doca, docagem, facilidade de encaixe
+n03218198 dogsled, trenó do cão, trenó cão
+n03220513 cúpula
+n03223299 capacho, tapete de boas vindas
+n03240683 plataforma de perfuração, plataformas offshore
+n03249569 tambor, membranofone, tímpano
+n03250847 baqueta
+n03255030 haltere
+n03259280 forno holandês
+n03271574 ventilador elétrico, ventilador
+n03272010 guitarra elétrica
+n03272562 locomotiva elétrica
+n03290653 centro de entretenimento
+n03291819 envelope
+n03297495 máquina de café expresso
+n03314780 pó facial
+n03325584 encharpe-de-penas
+n03337140 arquivo armário de arquivo, armário de arquivamento
+n03344393 barco-de-combate-a-incendios
+n03345487 carro-de-bombeiros
+n03347037 Grelha-de-lareira
+n03355925 mastro, mastro
+n03372029 flauta, flauta transversal
+n03376595 cadeira dobrável
+n03379051 capacete de futebol
+n03384352 empilhadeira
+n03388043 fonte
+n03388183 caneta-tinteiro
+n03388549 de dossel
+n03393912 vagão de carga
+n03394916 trompa, chifre
+n03400231 frigideira, frigideira, frigideira
+n03404251 casaco de pele
+n03417042 caminhão de lixo, dustcart
+n03424325 máscara-de-gás, respirador, capacete de gás
+n03425413 bomba gás, bomba de gasolina, bomba de gasolina, Dispens ilha
+n03443371 taça
+n03444034 go-kart
+n03445777 bola-de-golfe
+n03445924 carro-de-golfe
+n03447447 gôndola
+n03447721 gongo, tam-tam
+n03450230 vestido
+n03452741 piano, grand
+n03457902 estufa, berçário, estufa
+n03459775 grelha, grade do radiador
+n03461385 loja supermercado, mercearia, mercado de alimentos, o mercado
+n03467068 guilhotina
+n03476684 cabelo de slides
+n03476991 spray de cabelo
+n03478589 meia pista
+n03481172 martelo
+n03482405 cesto
+n03483316 soprador de mão, secador de cabelo, soprando secador, secador de cabelo, secador de cabelo
+n03485407 computador de mão, microcomputador de mão
+n03485794 lenço, lenço, lenço, hankey
+n03492542 disco rígido, disco rígido, disco fixo
+n03494278 harmónica, órgão boca, harpa, harpa boca
+n03495258 harpa
+n03496892 harvester, ceifeira
+n03498962 machado
+n03527444 coldre
+n03529860 home theater, home theater
+n03530642 favo de mel
+n03532672 gancho, garra
+n03534580 hoopskirt, crinolina
+n03535780 barra horizontal, barra alta
+n03538406 cavalo carrinho, cavalo-carro
+n03544143 ampulheta
+n03584254 iPod
+n03584829 ferro, ferro alisando
+n03590841 jack-o'-lantern
+n03594734 brim, brim azul, denim
+n03594945 jipe, landrover
+n03595614 Camisa T-shirt, camisa tee
+n03598930 quebra-cabeça
+n03599486 jinrikisha, ricksha, riquexó
+n03602883 joystick
+n03617480 kimono
+n03623198 joelheira
+n03627232 nó
+n03630383 revestimento do laboratório, bata de laboratório
+n03633091 concha
+n03637318 abajur, abajur
+n03642806 laptop, computador portátil
+n03649909 cortador de grama, cortador
+n03657121 tampa da lente tampa da lente
+n03658185 abridor de cartas, faca de papel, paperknife
+n03661043 biblioteca
+n03662601 barco salva-vidas
+n03666591 isqueiro
+n03670208 limousine, limo
+n03673027 liner forro de oceano
+n03676483 batom rouge lábio
+n03680355 Loafer
+n03690938 loção
+n03691459 alto-falante, alto-falante, unidade de alto-falante, sistema de alto-falante, sistema de altifalantes
+n03692522 lupa, lupa de joalheiro
+n03697007 serraria, serraria
+n03706229 bússola magnética
+n03709823 mala postal, postbag
+n03710193 caixa de correio caixa de letra
+n03710637 maiô
+n03710721 maiô
+n03717622 bueiro
+n03720891 maraca
+n03721384 marimba, xilofone
+n03724870 máscara
+n03729826 palito de fósforo
+n03733131 maypole
+n03733281 labirinto, labirinto
+n03733805 copo medidor
+n03742115 medicina peito, armário de remédios
+n03743016 megalito, estrutura megalítica
+n03759954 microfone microfone
+n03761084 microondas, forno microondas
+n03763968 uniforme militar
+n03764736 leite pode
+n03769881 minibus
+n03770439 minissaia, mini
+n03770679 minivan
+n03773504 míssil
+n03775071 luva
+n03775546 tigela
+n03776460 casa móvel, fabricados casa
+n03777568 Modelo T
+n03777754 modem
+n03781244 mosteiro
+n03782006 monitor de
+n03785016 ciclomotor
+n03786901 argamassa
+n03787032 capelo
+n03788195 mesquita
+n03788365 mosquiteiro
+n03791053 motor-de-scooter, scooters
+n03792782 bicicleta-de-montanha, bicicleta todo-o-terreno, off-roader
+n03792972 tenda de montanha
+n03793489 rato, rato do computador
+n03794056 ratoeira
+n03796401 van em movimento
+n03803284 focinho
+n03804744 prego
+n03814639 colar cervical
+n03814906 colar
+n03825788 mamilo
+n03832673 notebook, computador notebook
+n03837869 obelisco
+n03838899 oboé, oboé, hautbois
+n03840681 ocarina, batata-doce
+n03841143 hodômetro, hodômetro, mileometer, milometer
+n03843555 filtro de óleo
+n03854065 órgão, o órgão de tubulação
+n03857828 osciloscópio, espaço, osciloscópio de raios catódicos, CRO
+n03866082 overskirt
+n03868242 oxcart
+n03868863 máscara de oxigênio
+n03871628 pacote
+n03873416 pá, pá barco
+n03874293 roda de pás, roda de pás
+n03874599 cadeado
+n03876231 pincel
+n03877472 pijama, pijama, pj, pijama
+n03877845 palácio
+n03884397 panpipe, tubo pandean, syrinx
+n03887697 toalha de papel
+n03888257 pára-quedas, rampa
+n03888605 barras paralelas bares
+n03891251 banco do parque
+n03891332 parquímetro
+n03895866 carro de passageiro, treinador, transporte
+n03899768 pátio, terraço
+n03902125 orelhão, pay-estação
+n03903868 pedestal, plinto, footstall
+n03908618 caixa de lápis caixa de lápis
+n03908714 apontador de lápis
+n03916031 perfume, essência
+n03920288 placa de Petri
+n03924679 fotocopiadora
+n03929660 picareta, plectro, plectron
+n03929855 pickelhaube
+n03930313 cerca-de-piquete, empalidecendo
+n03930630 picape, caminhonete
+n03933933 cais
+n03935335 mealheiro, banco centavo
+n03937543 frasco de comprimidos
+n03938244 travesseiro
+n03942813 bola de ping-pong
+n03944341 pinwheel
+n03947888 pirata, navio pirata
+n03950228 jarro, ewer
+n03954731 avião o avião de carpinteiro, plano de tratamento de madeira
+n03956157 planetário
+n03958227 saco de plástico
+n03961711 cremalheira placa
+n03967562 arado, arado
+n03970156 êmbolo, ajudante de encanador
+n03976467 câmera Polaroid, câmera Polaroid Terra
+n03976657 pólo
+n03977966 polícia van, vagão polícia, camburão, vagão patrulha, vagão, preto Maria
+n03980874 poncho
+n03982430 mesa de bilhar mesa de bilhar, mesa de snooker
+n03983396 garrafa pop garrafa de refrigerante
+n03991062 pote, flowerpot
+n03992509 roda de oleiro
+n03995372 furadeira
+n03998194 oração tapete, tapete de oração
+n04004767 impressora de
+n04005630 prisão, prisão
+n04008634 projéctil, míssil
+n04009552 projector
+n04019541 disco, disco de hóquei
+n04023962 saco de perfuração, o saco de perfurador, bola de perfuração, punchball
+n04026417 bolsa
+n04033901 pena, caneta de pena
+n04033995 colcha, edredom, conforto, sopro
+n04037443 piloto, carro de corridas, carro de corrida
+n04039381 raquete, raquete
+n04040759 radiador
+n04041544 rádio wireless
+n04044716 radiotelescópio, refletor rádio
+n04049303 tambor de chuva
+n04065272 veículo de recreio, RV, RV
+n04067472 carretel
+n04069434 câmera reflex
+n04070727 geladeira, congelador
+n04074963 controle remoto remoto
+n04081281 restaurante, casa comendo, comendo lugar, restaurante
+n04086273 revólver, revólver, seis tiros
+n04090263 rifle
+n04099969 cadeira de balanço, o roqueiro
+n04111531 rotisserie
+n04116512 eliminador de borracha, borracha, borracha de lápis
+n04118538 bola de rugby
+n04118776 regra régua
+n04120489 tênis de corrida
+n04125021 seguro
+n04127249 pino de segurança
+n04131690 saleiro, saleiro
+n04133789 sandália
+n04136333 sarongue
+n04141076 sax, saxofone
+n04141327 bainha
+n04141975 escala máquina de pesagem
+n04146614 ônibus escolar
+n04147183 escuna
+n04149813 placar
+n04152593 tela tela CRT
+n04153751 parafuso
+n04154565 chave de fenda
+n04162706 cinto de segurança, cinto de segurança
+n04179913 máquina de costura
+n04192698 escudo, escudo
+n04200800 sapataria, sapataria, loja de sapatos
+n04201297 shoji
+n04204238 carrinho de compras
+n04204347 carrinho de compras
+n04208210 pá
+n04209133 touca de banho
+n04209239 cortina de chuveiro
+n04228054 ski
+n04229816 máscara de esqui
+n04235860 saco de dormir
+n04238763 régua de cálculo, slipstick
+n04239074 porta deslizante
+n04243546 ranhura maneta bandido
+n04251144 snorkel
+n04252077 snowmobile
+n04252225 snowplow, snowplough
+n04254120 Distribuidor de sabão
+n04254680 bola de futebol
+n04254777 meia
+n04258138 prato solar, colectores solares, forno solar
+n04259630 sombrero
+n04263257 tigela de sopa
+n04264628 barra de espaço
+n04265275 aquecedor
+n04266014 ônibus espacial
+n04270147 espátula
+n04273569 lancha
+n04275548 teia de aranha, teia de aranha
+n04277352 spindle
+n04285008 carro de esportes, carro esporte
+n04286575 holofotes, local
+n04296562 estágio
+n04310018 locomotiva a vapor
+n04311004 arco de aço ponte
+n04311174 cilindro de aço
+n04317175 estetoscópio
+n04325704 roubou
+n04326547 parede de pedra
+n04328186 cronômetro, cronômetro
+n04330267 fogão
+n04332243 coador
+n04335435 bonde, bonde, bonde, trole, bonde
+n04336792 maca
+n04344873 estúdio sofá, cama de dia
+n04346328 estupa, tope
+n04347754 submarino, pigboat, sub, U-boat
+n04350905 terno terno de roupas
+n04355338 relógio de sol
+n04355933 óculos de sol
+n04356056 óculos de sol óculos escuros, tons
+n04357314 protetor solar, protetor solar, bloqueador solar
+n04366367 ponte de suspensão
+n04367480 cotonete, mecha de algodão, esfregão
+n04370456 moletom
+n04371430 sunga calção de banho
+n04371774 balanço
+n04372370 interruptor interruptor eléctrico, interruptor eléctrico
+n04376876 seringa
+n04380533 candeeiro de mesa
+n04389033 tanque tanque de exército, veículo de combate blindado, veículo de combate blindado
+n04392985 jogador de fita
+n04398044 bule
+n04399382 de pelúcia, urso de pelúcia
+n04404412 televisão sistema de televisão
+n04409515 bola de tênis
+n04417672 palha, telhado de palha
+n04418357 cortina de teatro, cortina de teatro
+n04423845 dedal
+n04428191 debulhadora, thrasher, máquina debulhadora
+n04429376 trono
+n04435653 telhado de telha
+n04442312 torradeira
+n04443257 tabacaria, loja de tabacaria, tabacaria
+n04447861 assento do vaso sanitário
+n04456115 tocha
+n04458633 totem
+n04461696 caminhão de reboque, carro reboque, guincho
+n04462240 toyshop
+n04465501 trator
+n04467665 caminhão de reboque, reboque de trator, caminhões plataforma, equipamento, camião articulado, semi
+n04476259 bandeja
+n04479046 casaco
+n04482393 triciclo, trike, velocipede
+n04483307 trimaran
+n04485082 tripé
+n04486054 arco triunfal
+n04487081 Ônibus-elétrico, treinador do trole, trole trackless
+n04487394 trombone
+n04493381 banheira IVA
+n04501370 catraca
+n04505470 teclado de máquina de escrever
+n04507155 guarda-chuva
+n04509417 monociclo, monociclo
+n04515003 vertical, piano vertical
+n04517823 vácuo aspirador
+n04522168 vaso
+n04523525 abóbada
+n04525038 veludo
+n04525305 máquina de venda automática
+n04532106 paramento
+n04532670 viaduto
+n04536866 violino, violino
+n04540053 voleibol
+n04542943 ferro de waffle
+n04548280 relógio de parede
+n04548362 carteira, carteira, notecase, livro de bolso
+n04550184 guarda-roupa, armário, pressione
+n04552348 bombardeiro, avião militar
+n04553703 lavatório, pia ou bacia, de lavabo, lavabo
+n04554684 louça, máquina de lavar automática, máquina de lavar
+n04557648 garrafa de água
+n04560804 água jug
+n04562935 torre de água
+n04579145 jarro de uísque
+n04579432 apito
+n04584207 peruca
+n04589890 tela da janela
+n04590129 persiana
+n04591157 laço Windsor
+n04591713 garrafa de vinho
+n04592741 asa
+n04596742 uoque
+n04597913 colher de madeira
+n04599235 lã, lã, lã
+n04604644 cerca, cerca de cobra, cerca de cobra-rail, cerca Virginia
+n04606251 naufrágio
+n04612504 yawl
+n04613696 yurt
+n06359193 web site website, site na internet, local
+n06596364 quadrinhos
+n06785654 palavras cruzadas, palavras cruzadas
+n06794110 rua sinal
+n06874185 semáforo sinal de tráfego, sinal de trânsito
+n07248320 jaqueta livro, capa de poeira, sobrecapa, capa de poeira
+n07565083 Menu
+n07579787 placa
+n07583066 guacamole
+n07584110 consomme
+n07590611 panela quente, hotpot
+n07613480 ninharia
+n07614500 sorvete, sorvete
+n07615774 pirulito, picolé
+n07684084 pão francês
+n07693725 bagel, beigel
+n07695742 pretzel
+n07697313 cheeseburger
+n07697537 hotdog, cachorro quente, quente vermelho
+n07711569 puré de batata
+n07714571 cabeça do repolho
+n07714990 brócolis
+n07715103 couve-flor
+n07716358 abobrinha, courgette
+n07716906 espaguete squash
+n07717410 polpa de bolota
+n07717556 abóbora
+n07718472 pepino, cuke
+n07718747 alcachofra, alcachofra
+n07720875 pimentão
+n07730033 cardo
+n07734744 cogumelo
+n07742313 Granny Smith
+n07745940 morango
+n07747607 laranja
+n07749582 limão
+n07753113 fig
+n07753275 abacaxi, ananás
+n07753592 banana
+n07754684 jaca, jak, jack
+n07760859 pinha
+n07768694 romã
+n07802026 feno
+n07831146 carbonara
+n07836838 molho de chocolate, calda de chocolate
+n07860988 massa
+n07871810 naco de carne, bolo
+n07873807 pizza, pizza
+n07875152 potpie
+n07880968 burrito
+n07892512 vinho tinto
+n07920052 espresso
+n07930864 copo
+n07932039 gemada
+n09193705 alpe
+n09229709 bolha
+n09246464 penhasco, queda, drop-off
+n09256479 recife de coral
+n09288635 gêiser
+n09332890 beira do lago, lakeshore
+n09399592 promontório, promontório, cabeça, foreland
+n09421951 barra, barra de areia
+n09428293 litoral, costa, seacoast
+n09468604 vale, vale
+n09472597 vulcão
+n09835506 jogador de beisebol
+n10148035 noivo, noivo
+n10565667 mergulhador 
+n11879895 colza
+n11939491 daisy
+n12057211 deslizador de senhora amarelo, amarelo lady-chinelo, Cypripedium calceolus, parviflorum Cypripedium
+n12144580 milho
+n12267677 bolota
+n12620546 quadril, subiu quadril, rosa mosqueta
+n12768682 buckeye, castanha de cavalo, conker
+n12985857 fungo coral
+n12998815 agaric
+n13037406 Gyromitra
+n13040303 stinkhorn, fungo carniça
+n13044778 earthstar
+n13052670 galinha-das-mato, galinha do mato, Polyporus frondosus, Maitake
+n13054560 bolete
+n13133613 ouvido, ponto, capitulum
+n15075141 higiénico, papel higiênico, papel higiênico
+abadia 978
+terminal do aeroporto 979
+pista 980
+anfiteatro 981
+parque de diversões 982
+aquário 983
+aqueduto 984
+arco 985
+galeria de arte 986
+estúdio de arte 987
+linha de montagem 988
+sótão 989
+auditório 990
+prédio de apartamentos 991
+badlands 992
+salão 993
+floresta de bambu 994
+salão de banquetes 995
+bar 996
+campo de beisebol 997
+cave 998
+basílica 999
+bayou 1000
+salão de beleza 1001
+quarto 1002
+calçadão 1003
+deck do barco 1004
+livraria 1005
+jardim botânico 1006
+boliche 1007
+anel boxe 1008
+ponte 1009
+Fachada do edifício de 1010
+interior de autocarros 1011
+loja de carniceiros 1012
+montículo 1013
+padaria 1014
+cafeteria 1015
+acampamento 1016
+confeitaria 1017
+canyon 1018
+castelo 1019
+cemitério 1020
+chalet 1021
+sala de aula 1022
+armário 1023
+loja de roupas 1024
+costa 1025
+cockpit de 1026
+cafetaria 1027
+centro de conferências 1028
+sala de conferências 1029
+local de construção 1030
+campo de milho 1031
+corredor 1032
+cottage jardim 1033
+tribunal 1034
+pátio 1035
+riacho 1036
+fenda 1037
+faixa de pedestres 1038
+Catedral / parte externa 1039
+Igreja / parte externa 1040
+dam 1041
+sala de jantar 1042
+doca 1043
+dormitório 1044
+calçada 1045
+deserto / areia 1046
+deserto / vegetação 1047
+dinette / home 1048
+porta / parte externa 1049
+sala de máquinas 1050
+escavação 1051
+fairway 1052
+escada de incêndio 1053
+bombeiros 1054
+praça de alimentação 1055
+caminho da floresta 1056
+estrada florestal 1057
+jardim formal 1058
+fonte 1059
+campo / cultivada 1060
+campo / selvagem 1061
+galley 1062
+sala de jogos 1063
+depósito de lixo 1064 
+posto de gasolina 1065
+loja de presentes 1,066
+campo de golfe 1067
+porto 1068
+jardim de ervas 1069
+estrada 1070
+home office 1071
+hospital de 1072
+quarto de hospital 1073
+hot spring 1074
+quarto de hotel 1075
+hotel / parte externa 1076
+sorveteria 1077
+iceberg 1078
+igloo 1079
+ilhota 1080
+Ice Skating Rink / parte externa 1081
+Inn / parte externa 1082
+cela 1083
+kasbah 1084
+jardim de infância em sala de aula 1085
+cozinha 1086
+kitchenette 1087
+laundromat 1088
+farol 1089
+sala 1090
+átrio 1091
+vestiários 1092
+mansão 1093
+pântano 1094
+artes marciais ginásio 1095
+mausoléu 1096
+medina 1097
+motel 1098
+montanha 1099
+montanha de neve 1100
+estúdio de música 1101
+mercado / parte externa 1102
+mosteiro parte externa 1103
+interior de museu 1104
+berçário 1105
+mar 1106
+office 1107
+edifício de escritórios 1108
+pomar 1109
+pagode 1110
+palácio 1111
+despensa 1112
+estacionamento 1113
+salão de 1114
+pasto 1115
+pátio 1116
+pavilhão 1117
+cabine telefônica 1118
+área para piquenique 1119
+parque infantil 1120
+Plaza 1121
+lagoa 1122
+púlpito 1123
+hipódromo 1124
+jangada 1125
+Caminho de Ferro 1126
+floresta 1127
+recepção 1128
+bairro residencial 1129
+restaurante 1130
+cozinha do restaurante 1131
+restaurante no pátio 1132
+arroz em casca 1133
+rio 1134
+Arch Rock 1135
+ponte de corda 1136
+ruína 1137
+pista 1138
+banco de areia 1139
+escola 1140
+rochedo mar 1141
+derramado 1142
+sapataria 1143
+shopfront 1144
+chuveiro 1145
+estância de esqui 1146
+pista de esqui 1147
+céu 1148
+arranha-céus 1149
+favela 1150
+campo de neve 1151
+escadaria 1152
+supermercado 1153
+pântano 1154
+estádio de baseball 1155
+estádio de futebol 1156
+fase interior 1157
+estação do metro 1158
+piscina parte externa 1159
+estúdio de televisão 1,160
+jardim topiaria 1161
+torre de 1162
+railway trem 1163
+fazenda de árvores 1164
+trincheira 1165
+Templo Ásia Oriental 1166
+Templo Sul da Ásia 1167
+pista parte externa 1168
+estação de trem plataforma 1169
+subaquática recife de coral 1170
+vale 1171
+horta 1172
+varanda 1173
+viaduto 1174
+vulcão 1175
+sala de espera 1176
+torre de água 1177
+bebedouro 1178
+campo de trigo 1179
+Wind Farm 1180
+moinho de vento 1181
+quintal 1182
